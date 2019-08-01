@@ -24,7 +24,7 @@ function sendAccountInfo(obj){
 				var ibanvalue = obj.IBAN;
 				var owner = Object.keys(obj)[7];
 				var accountvalue = obj.accountOwner;
-				var customerId = 1;
+				var customerId =  Math.floor(Math.random() * 101);
 				var dataToSend = {
 
 						customerId: customerId,
